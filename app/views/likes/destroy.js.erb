@@ -1,0 +1,5 @@
+<%= @post = (@post.to_i * -1).to_s if @type == "comment" %>
+$("#like_counter_<%= @post %>").html(<%= @likes %>);
+$("#thumb<%= @post %>").addClass('thumb_icon').removeClass('thumb_icon_liked');
+$("#thumb<%= @post %>").attr("href", "<%= likes_path(type: @type, like:{ likeable: @like.likeable }) %>");
+$("#thumb<%= @post %>").attr("data-method", "post"); 

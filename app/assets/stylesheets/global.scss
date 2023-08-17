@@ -1,0 +1,52 @@
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(240,240,240,0.9);
+}
+
+.background_image {
+  width: 100%;
+  min-width: 1920px !important;
+  height: auto;
+  position: fixed;
+  opacity: 0.7;
+  top: 85px;
+  left: 0;
+  z-index: -1;
+}
+
+.main_title {
+  position: absolute;
+}
+
+.main_container {  
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.login-button {
+  cursor: pointer !important;
+}
+
+.small_avatar {
+  width: 50px;
+  max-height: 50px;
+  display: inline-block;
+}
+
+.small_avatar_comments {
+  width: 32px;
+  max-height: 32px;
+  display: inline-block;
+}
+
+.small_avatar, .small_avatar_comments {
+  position: relative;
+  top: 10px;
+}
+
+.flash {
+  font-weight: bold;
+}

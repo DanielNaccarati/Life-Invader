@@ -1,0 +1,145 @@
+.feed_container {
+  display: inline-block;
+  text-align: left;
+  width: 40%;
+  min-width: 600px;
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0px 3px 15px -5px; 
+}
+
+.feed_comment {
+  border-top: 2px solid rgba(0,0,0,0.1);
+}
+
+.feed_post {
+  font-size: 18px;
+}
+
+.feed_post img {
+  height: auto;
+  width: 100%;
+}
+
+.delete_link {
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.post_form {
+  border-bottom: 2px solid #ee5253;
+  padding: 5px 0 0 0;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.post_form textarea {
+  width: 95%;
+  border-width: 0 0 0 0;
+  padding: 10px 40px 10px 0;
+  margin-left: 10px;
+}
+
+.post_content {
+  font-size: 20px;
+  padding: 15px 0 25px 5px;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+
+.comment_content {
+  padding-left: 5px;
+}
+
+.comment_form {
+  border-bottom: 2px solid #ee5253;
+  padding-bottom: 1px;
+}
+
+.comment_form textarea {
+  width: 95%;
+  border-width: 2px 0 0 0;
+  border-color: rgba(0,0,0,0.1);
+  border-radius: 2px;
+  padding: 5px 45px 0 10px;
+}
+
+.comment_info {
+  height: 50px;
+  font-size: 15px;
+  padding: 4px;
+  width: 100%;
+  margin: 0;
+  background-color: rgba(235,235,235,0.4);
+}
+
+.comment_form textarea:focus, .post_form textarea:focus {
+  outline: none;
+}
+
+.post_form .file {
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.post_form textarea:focus ~ .file {
+  visibility: visible;
+}
+
+.post_form .button, .comment_form .button {
+  position: relative;
+  float: none;
+  opacity: 1;
+  z-index: 1;
+}
+
+.post_info {
+  overflow: hidden;
+  background-color: rgba(190,0,0,0.1);
+  height: 70px;
+  padding-left: 5px;
+}
+
+.thumb_icon, .thumb_icon_liked {
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.thumb_icon:hover {
+  color: rgb(0,215,35);
+}
+
+a.thumb_icon {
+  color: black;
+}
+
+.thumb_icon_liked {
+  color: rgb(0,215,35);
+}
+
+.likes_container {
+  display: inline-block;
+  border-left: 2px solid rgba(0,0,0,0.5);
+  padding: 0 5px 5px 5px;
+  background-color: white;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.trash_icon {
+  position: relative;
+  display: inline-block;
+  margin-left: 12px;
+  text-decoration: none;
+  transform: scale(1.5);
+  cursor: not-allowed;
+}
+
+.trash_icon:hover {
+  color: red;
+}
+
+a.trash_icon {
+  color: black;
+}
